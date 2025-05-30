@@ -2,26 +2,34 @@
 
 # Classes
 * Base class for characters -> AuraCharacter
+<br>
   * Class for playable character -> AuraCharacter
   * Class for enemies -> AuraEnemy
 <br>
 <br>
 * Player classes
+<br>
   * AuraPlayerController -> player movement and inputs
+    <br>
   * AuraPlayerState -> owner of GAS for player
 <br>
 <br>
 * Game classes
+<br>
   * AuraGameModeBase -> setup game modes
 <br>
 <br>
 * Interaction classes
+<br>
   * EnemyInterface -> to identify enemies for highlighting outline
 <br>
 <br>
 * AbilitySystem classes
+<br>
   * AuraAbilitySystemComponent -> GAS components
+<br>
   * AuraAttributeSet -> GAS attributes
+<br>
 # Blueprints
   * Player
     * BP_AuraCharacter
