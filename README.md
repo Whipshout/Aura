@@ -2,7 +2,6 @@
 
 # Classes
 * Base class for characters -> AuraCharacter
-<br>
   * Class for playable character -> AuraCharacter
   * Class for enemies -> AuraEnemy
 <br>
