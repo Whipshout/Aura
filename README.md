@@ -61,5 +61,6 @@
         * Server -> PossessedBy
         * Client -> OnRep_PlayerState
       * GAS on Player Pawn
+        * You have to use SetOwner() on the OwnerActor to set the controller 
         * Server -> PossessedBy
         * Client AcknowledgePossession
