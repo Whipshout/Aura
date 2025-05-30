@@ -4,12 +4,9 @@
 * Base class for characters -> AuraCharacter
   * Class for playable character -> AuraCharacter
   * Class for enemies -> AuraEnemy
-<br>
-<br>
+
 * Player classes
-<br>
   * AuraPlayerController -> player movement and inputs
-    <br>
   * AuraPlayerState -> owner of GAS for player
 <br>
 <br>
