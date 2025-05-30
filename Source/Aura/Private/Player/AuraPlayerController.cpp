@@ -27,31 +27,24 @@ void AAuraPlayerController::CursorTrace()
 		return;
 	}
 
-	LastActor = ThisActor;
-	ThisActor = CursorHit.GetActor();
+	NewActor = CursorHit.GetActor();
 
-	if (LastActor == nullptr)
+	if (LastActor == NewActor)
 	{
-		if (ThisActor != nullptr)
-		{
-			ThisActor->HighlightActor();
-		}
+		return;
 	}
-	else
+
+	if (LastActor)
 	{
-		if (ThisActor == nullptr)
-		{
-			LastActor->UnHighlightActor();
-		}
-		else
-		{
-			if (LastActor != ThisActor)
-			{
-				LastActor->UnHighlightActor();
-				ThisActor->HighlightActor();
-			}
-		}
+		LastActor->UnHighlightActor();
 	}
+
+	if (NewActor)
+	{
+		NewActor->HighlightActor();
+	}
+
+	LastActor = NewActor;
 }
 
 void AAuraPlayerController::BeginPlay()

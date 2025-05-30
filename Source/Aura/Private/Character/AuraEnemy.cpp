@@ -1,6 +1,6 @@
 // Copyright Whipshout
 
-#include "AuraEnemy.h"
+#include "Character/AuraEnemy.h"
 #include "Aura/Aura.h"
 
 AAuraEnemy::AAuraEnemy()

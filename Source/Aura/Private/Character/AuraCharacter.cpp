@@ -1,6 +1,6 @@
 // Copyright Whipshout
 
-#include "AuraCharacter.h"
+#include "Character/AuraCharacter.h"
 
 #include "GameFramework/CharacterMovementComponent.h"
 
