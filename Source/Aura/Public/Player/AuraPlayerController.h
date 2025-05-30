@@ -3,14 +3,10 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Interaction/EnemyInterface.h"
 #include "GameFramework/PlayerController.h"
 #include "EnhancedInput/Public/InputMappingContext.h"
 #include "AuraPlayerController.generated.h"
-
-class UIInputMappingContext;
-class UInputAction;
-struct FInputActionValue;
-class IEnemyInterface;
 
 /**
  * 
