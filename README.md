@@ -52,3 +52,8 @@
         * You have to use SetOwner() on the OwnerActor to set the controller 
         * Server -> PossessedBy
         * Client AcknowledgePossession
+  * Attribute
+    * Need `virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;` to get variable when replicated
+    * Need `UPROPERTY(ReplicatedUsing = OnRep_Health)` in the variable we want to replicate
+    * Need `FGameplayAttributeData` as variable type
+    * Need `UFUNCTION() void OnRep_Health(const FGameplayAttributeData& OldHealth) const;` to replicate the variable
