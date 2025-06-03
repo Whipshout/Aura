@@ -42,8 +42,6 @@ void UAuraAttributeSet::PreAttributeBaseChange(const FGameplayAttribute& Attribu
 
 void UAuraAttributeSet::SetEffectProperties(const FGameplayEffectModCallbackData& Data, FEffectProperties& Props) const
 {
-	// Source = causer
-	// Target = effect target (owner of this)
 	Props.EffectContextHandle = Data.EffectSpec.GetContext();
 	Props.SourceAsc = Props.EffectContextHandle.GetOriginalInstigatorAbilitySystemComponent();
 
