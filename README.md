@@ -29,6 +29,37 @@
     * InputActions
       * IA_Move
 
+# Attributes
+* Primary attributes
+  * Strength -> increases physical damage
+  * Intelligence -> increases magical damage
+  * Resilience -> increases armor and armor penetration
+  * Vigor -> increases health
+* Secondary attributes
+  * Armor -> reduces damage taken, improves Block Chance
+    * Depends on -> Resilience
+  * Armor Penetration -> ignores percentage of enemy Armor, increases Critical Hit Chance
+    * Depends on -> Resilience
+  * Block Chance -> chance to cut incoming damage in half
+    * Depends on -> Armor
+  * Critical Hit Chance -> chance to double damage plus Critical Hit Bonus
+    * Depends on -> Armor Penetration
+  * Critical Hit Damage -> bonus damage added when a critical hit is scored
+    * Depends on -> Armor Penetration
+  * Critical Hit Resistance -> reduces critical hit chance of attacking enemies
+    * Depends on -> Armor
+  * Health Regeneration -> amount of Health regenerated every 1 second
+    * Depends on -> Vigor
+  * Mana Regeneration -> amount of Mana regenerated every 1 second
+    * Depends on -> Intelligence
+  * Max Health -> maximum amount of Health obtainable
+    * Depends on -> Vigor
+  * Max Mana -> maximum amount of Mana obtainable
+    * Depends on -> Intelligence
+* Vital attributes
+  * Health
+  * Mana
+
 # Info
 * Set socket for weapon in skeletal mesh for player and enemies
   * Disable collision for weapon
