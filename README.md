@@ -60,6 +60,15 @@
   * Health
   * Mana
 
+# Abilities
+* Replication Policy
+  * Useless. Don't use it.
+  * Gameplay Abilities are replicated always
+* Server Remote Ability Cancellation
+  * Don't use it -> When client's ability ends, server ends too
+* Replicate Input Directly
+  * Don't use it -> Epic discourages it
+
 # Info
 * Set socket for weapon in skeletal mesh for player and enemies
   * Disable collision for weapon
