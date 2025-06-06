@@ -5,9 +5,12 @@
 #include "CoreMinimal.h"
 #include "Interaction/EnemyInterface.h"
 #include "GameFramework/PlayerController.h"
+#include "GameplayTagContainer.h"
 #include "EnhancedInput/Public/InputMappingContext.h"
 #include "AuraPlayerController.generated.h"
 
+class UAuraInputConfig;
+class UAuraAbilitySystemComponent;
 /**
  * 
  */
@@ -38,4 +41,16 @@ private:
 
 	TScriptInterface<IEnemyInterface> LastActor;
 	TScriptInterface<IEnemyInterface> NewActor;
+
+	void AbilityInputTagPressed(FGameplayTag InputTag);
+	void AbilityInputTagReleased(FGameplayTag InputTag);
+	void AbilityInputTagHeld(FGameplayTag InputTag);
+
+	UPROPERTY(EditDefaultsOnly, Category = "Input")
+	TObjectPtr<UAuraInputConfig> InputConfig;
+
+	UPROPERTY()
+	TObjectPtr<UAuraAbilitySystemComponent> AuraAbilitySystemComponent;
+
+	UAuraAbilitySystemComponent* GetASC();
 };
