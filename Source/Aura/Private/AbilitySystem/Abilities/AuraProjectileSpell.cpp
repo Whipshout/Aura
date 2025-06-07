@@ -11,8 +11,11 @@ void UAuraProjectileSpell::ActivateAbility(const FGameplayAbilitySpecHandle Hand
                                            const FGameplayEventData* TriggerEventData)
 {
 	Super::ActivateAbility(Handle, ActorInfo, ActivationInfo, TriggerEventData);
+}
 
-	if (const bool bIsServer = HasAuthority(&ActivationInfo); !bIsServer)
+void UAuraProjectileSpell::SpawnProjectile()
+{
+	if (const bool bIsServer = GetAvatarActorFromActorInfo()->HasAuthority(); !bIsServer)
 	{
 		return;
 	}
